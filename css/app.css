@@ -16,6 +16,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
 
 /** Header y Navegacion **/
 .nombre-sitio {
@@ -37,5 +41,25 @@ a {
 .hero {
   background-image: url(../img/principal.jpg);
   background-size: cover;
-  height: 550px;
+  height: 600px;
+}
+/*Categorias*/
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.categorias h2 {
+  text-align: center;
+}
+.categoria a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 10px;
 }
