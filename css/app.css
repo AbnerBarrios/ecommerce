@@ -31,6 +31,8 @@ a {
 }
 .nav-principal {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .hero {
   background-image: url(../img/principal.jpg);
