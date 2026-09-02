@@ -60,10 +60,15 @@ img {
 }
 .hero {
   background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 57rem;
+  background-position: center center;
+  height: 55rem;
 }
 /*Categorias*/
+.categorias {
+  padding-top: 5rem;
+}
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
