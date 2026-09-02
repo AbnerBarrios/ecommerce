@@ -1,19 +1,40 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
 
 /** Globales **/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 3rem;
+}
 a {
   text-decoration: none;
   color: #000;
 }
 .contenedor {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 img {
@@ -23,31 +44,35 @@ img {
 
 /** Header y Navegacion **/
 .nombre-sitio {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5rem;
   text-align: center;
 }
 .nombre-sitio span {
   color: #037bc0;
 }
 .contenedor-navegacion {
-  border-top: 1px solid #e1e1e1;
+  border-top: 0.1rem solid #e1e1e1;
 }
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
 .hero {
   background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  background-position: center center;
+  height: 55rem;
 }
 /*Categorias*/
+.categorias {
+  padding-top: 5rem;
+}
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
 }
 .categorias h2 {
   text-align: center;
@@ -55,11 +80,29 @@ img {
 .categoria a {
   display: block;
   text-align: center;
-  padding: 20px;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: 2rem;
 }
 .categoria a:hover {
   background-color: #037bc0;
   color: #fff;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 1rem;
+}
+/*Sobre Nosotros*/
+.sobre-nosotros {
+  background-image:
+    linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%),
+    url(../img/nosotros.jpg);
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%, 90rem;
+}
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+.texto-nosotros {
+  grid-column: 2 / 3;
 }
