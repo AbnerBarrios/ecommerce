@@ -41,6 +41,18 @@ img {
   max-width: 100%;
   display: block;
 }
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+.btn:hover {
+  background-color: #769c02;
+}
 /*Utilidades*/
 .text-center {
   text-align: center;
@@ -131,16 +143,4 @@ img {
 }
 .texto-producto p {
   margin: 0 0 0.5rem 0;
-}
-.texto-producto a {
-  background-color: #8cbc00;
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
-  padding: 1rem;
-  transition: background-color 0.3s ease-out;
-}
-.texto-producto a:hover {
-  background-color: #769c02;
 }
