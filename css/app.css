@@ -41,7 +41,10 @@ img {
   max-width: 100%;
   display: block;
 }
-
+/*Utilidades*/
+.text-center {
+  text-align: center;
+}
 /** Header y Navegacion **/
 .nombre-sitio {
   margin-top: 5rem;
@@ -106,4 +109,8 @@ img {
 .texto-nosotros {
   grid-column: 2 / 3;
   color: #fff;
+}
+/*Listado de productos*/
+.contenido-principal {
+  padding-top: 5rem;
 }
