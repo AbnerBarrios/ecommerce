@@ -247,3 +247,9 @@ img {
   width: 60rem;
   margin: 0 auto;
 }
+/*Galeria*/
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
