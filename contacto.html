@@ -32,11 +32,53 @@
     <main class="contenido-principal contenedor">
       <h2 class="text-center">Contacto</h2>
       <form>
-        <label for="nombre">Nombre: </label>
-        <input type="text" placeholder="Tu Nombre" id="nombre" />
-
-        <label for="asunto">Asunto: </label>
-        <input type="text" id="asunto" placeholder="Tu Asunto" />
+        <fieldset>
+          <legend>Tus Datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="Tu Nombre" id="nombre" />
+          </div>
+          <div class="campo">
+            <label for="asunto">Asunto: </label>
+            <input type="text" id="asunto" placeholder="Tu Asunto" />
+          </div>
+          <div class="campo">
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" placeholder="Tu E-mail" />
+          </div>
+          <div class="campo">
+            <label for="tel">Telefono: </label>
+            <input type="tel" id="tel" placeholder="Tu Telefono" />
+          </div>
+          <div class="campo">
+            <label for="campo">Mensaje: </label>
+            <textarea id="campo" rows="10" cols="20"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Pais</legend>
+          <div class="campo">
+            <label for="pais">Pais</label>
+            <select id="pais">
+              <option disabled selected value>-- Seleccione --</option>
+              <option value="GT">Guatemala</option>
+              <option value="MX">Mexico</option>
+              <option value="AR">Argentina</option>
+              <option value="CO">Colombia</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Informacion Extra</legend>
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" type="radio" name="tipo" />
+          </div>
+          <div class="campo">
+            <label for="proveedor">Proveedor</label>
+            <input id="proveedor" type="radio" name="tipo" value="cliente" />
+          </div>
+        </fieldset>
       </form>
     </main>
 
